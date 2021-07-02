@@ -1,0 +1,127 @@
+{
+  "project_info": {
+    "project_number": "441104878168",
+    "firebase_url": "https://bait2123-202010-04.firebaseio.com",
+    "project_id": "bait2123-202010-04",
+    "storage_bucket": "bait2123-202010-04.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:441104878168:android:fd9d57d050895e488c982d",
+        "android_client_info": {
+          "package_name": "com.android.example.iottest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "441104878168-9cce27tqdvsoku4fhrp31rabqeplahun.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLnSAj2D-1SWC7rEOSXrFljL4dGvoHl_g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "441104878168-9cce27tqdvsoku4fhrp31rabqeplahun.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:441104878168:android:abaef12a330a0e878c982d",
+        "android_client_info": {
+          "package_name": "com.example.greenhouse"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "441104878168-9cce27tqdvsoku4fhrp31rabqeplahun.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLnSAj2D-1SWC7rEOSXrFljL4dGvoHl_g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "441104878168-9cce27tqdvsoku4fhrp31rabqeplahun.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:441104878168:android:3c2a22ae69ad782b8c982d",
+        "android_client_info": {
+          "package_name": "com.example.iotcommonresources"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "441104878168-9cce27tqdvsoku4fhrp31rabqeplahun.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLnSAj2D-1SWC7rEOSXrFljL4dGvoHl_g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "441104878168-9cce27tqdvsoku4fhrp31rabqeplahun.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:441104878168:android:05eda0d98cea050e8c982d",
+        "android_client_info": {
+          "package_name": "com.example.smartgreenhouse"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "441104878168-9cce27tqdvsoku4fhrp31rabqeplahun.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLnSAj2D-1SWC7rEOSXrFljL4dGvoHl_g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "441104878168-9cce27tqdvsoku4fhrp31rabqeplahun.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

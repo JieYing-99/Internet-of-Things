@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewTemperatureStatus"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/text_view_border"
+        android:gravity="center"
+        android:text="..."
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="@+id/textViewReadingTemperature"
+        app:layout_constraintStart_toStartOf="@+id/textViewReadingTemperature"
+        app:layout_constraintTop_toBottomOf="@+id/textViewReadingTemperature" />
+
+    <TextView
+        android:id="@+id/textViewTemperatureActuator"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/text_view_border"
+        android:gravity="center"
+        android:text="..."
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="@+id/textViewReadingTemperature"
+        app:layout_constraintStart_toStartOf="@+id/textViewReadingTemperature"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTemperatureStatus" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewLightTitle"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="Light Intensity"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewReadingLight" />
+
+    <TextView
+        android:id="@+id/textViewHumidityTitle"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="Humidity"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewReadingHumidity" />
+
+    <TextView
+        android:id="@+id/textViewTemperatureTitle"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="Temperature"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewReadingTemperature" />
+
+    <TextView
+        android:id="@+id/textViewLight"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:text="Light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLightTitle" />
+
+    <TextView
+        android:id="@+id/textViewShades"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:text="Shades"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLight" />
+
+    <TextView
+        android:id="@+id/textViewWaterSprinkler"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:text="Water Sprinkler"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHumidityTitle" />
+
+    <TextView
+        android:id="@+id/textViewWindows"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:text="Windows"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewWaterSprinkler" />
+
+    <TextView
+        android:id="@+id/textViewHeater"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:text="Heater"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTemperatureTitle" />
+
+
+    <TextView
+        android:id="@+id/textViewFan"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:text="Fan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHeater" />
+
+    <Switch
+        android:id="@+id/switchLight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewLight"
+        app:layout_constraintStart_toEndOf="@+id/textViewLight"
+        app:layout_constraintTop_toTopOf="@+id/textViewLight" />
+
+    <Switch
+        android:id="@+id/switchShades"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewShades"
+        app:layout_constraintStart_toEndOf="@+id/textViewShades"
+        app:layout_constraintTop_toTopOf="@+id/textViewShades" />
+
+    <Switch
+        android:id="@+id/switchWaterSprinkler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewWaterSprinkler"
+        app:layout_constraintStart_toEndOf="@+id/textViewWaterSprinkler"
+        app:layout_constraintTop_toTopOf="@+id/textViewWaterSprinkler" />
+
+    <Switch
+        android:id="@+id/switchWindows"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewWindows"
+        app:layout_constraintStart_toEndOf="@+id/textViewWindows"
+        app:layout_constraintTop_toTopOf="@+id/textViewWindows" />
+
+    <Switch
+        android:id="@+id/switchHeater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewHeater"
+        app:layout_constraintStart_toEndOf="@+id/textViewHeater"
+        app:layout_constraintTop_toTopOf="@+id/textViewHeater" />
+
+    <Switch
+        android:id="@+id/switchFan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewFan"
+        app:layout_constraintStart_toEndOf="@+id/textViewFan"
+        app:layout_constraintTop_toTopOf="@+id/textViewFan" />
+
+    <TextView
+        android:id="@+id/textViewReadingLight"
+        android:layout_width="130dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/text_view_border"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewLightStatus"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/text_view_border"
+        android:gravity="center"
+        android:text="..."
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="@+id/textViewReadingLight"
+        app:layout_constraintStart_toStartOf="@+id/textViewReadingLight"
+        app:layout_constraintTop_toBottomOf="@+id/textViewReadingLight" />
+
+    <TextView
+        android:id="@+id/textViewLightActuator"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/text_view_border"
+        android:gravity="center"
+        android:text="..."
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="@+id/textViewReadingLight"
+        app:layout_constraintStart_toStartOf="@+id/textViewReadingLight"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLightStatus" />
+
+    <TextView
+        android:id="@+id/textViewHumidityStatus"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/text_view_border"
+        android:gravity="center"
+        android:text="..."
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="@+id/textViewReadingHumidity"
+        app:layout_constraintStart_toStartOf="@+id/textViewReadingHumidity"
+        app:layout_constraintTop_toBottomOf="@+id/textViewReadingHumidity" />
+
+    <TextView
+        android:id="@+id/textViewHumidityActuator"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/text_view_border"
+        android:gravity="center"
+        android:text="..."
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="@+id/textViewReadingHumidity"
+        app:layout_constraintStart_toStartOf="@+id/textViewReadingHumidity"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHumidityStatus" />
+
+    <TextView
+        android:id="@+id/textViewReadingHumidity"
+        android:layout_width="130dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/text_view_border"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLightStatus" />
+
+    <TextView
+        android:id="@+id/textViewReadingTemperature"
+        android:layout_width="130dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/text_view_border"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHumidityStatus" />
+
+    <ToggleButton
+        android:id="@+id/toggleButtonTemperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="ToggleButton"
+        android:textOff="MANUAL"
+        android:textOn="AUTO"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewTemperatureTitle"
+        app:layout_constraintStart_toEndOf="@+id/textViewTemperatureTitle"
+        app:layout_constraintTop_toTopOf="@+id/textViewTemperatureTitle" />
+
+    <ToggleButton
+        android:id="@+id/toggleButtonHumidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="ToggleButton"
+        android:textOff="MANUAL"
+        android:textOn="AUTO"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewHumidityTitle"
+        app:layout_constraintStart_toEndOf="@+id/textViewHumidityTitle"
+        app:layout_constraintTop_toTopOf="@+id/textViewHumidityTitle" />
+
+    <ToggleButton
+        android:id="@+id/toggleButtonLight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="ToggleButton"
+        android:textOff="MANUAL"
+        android:textOn="AUTO"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewLightTitle"
+        app:layout_constraintStart_toEndOf="@+id/textViewLightTitle"
+        app:layout_constraintTop_toTopOf="@+id/textViewLightTitle" />
+
+    <TextView
+        android:id="@+id/textViewLightUnit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="lx"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewReadingLight"
+        app:layout_constraintEnd_toEndOf="@+id/textViewReadingLight" />
+
+    <TextView
+        android:id="@+id/textViewHumidityUnit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="%"
+        app:layout_constraintBottom_toTopOf="@+id/textViewHumidityStatus"
+        app:layout_constraintEnd_toEndOf="@+id/textViewReadingHumidity" />
+
+    <TextView
+        android:id="@+id/textViewTemperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="°C"
+        app:layout_constraintBottom_toTopOf="@+id/textViewTemperatureStatus"
+        app:layout_constraintEnd_toEndOf="@+id/textViewReadingTemperature" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
